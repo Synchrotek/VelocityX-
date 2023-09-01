@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelocityX</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Connecting the  Media Quries Codes  -->
+    <link rel="stylesheet" href="./styles-mq.css">
+
+</head>
+
+<body>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <nav class="navbar">
+        <h2 class="logo">VelocityX</h2>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a onclick="scrollToSection()" href="#">Cars</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-lg menu-hamburger"></i>
+    </nav>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <section class="video-section">
+        <video autoplay muted loop id="myVideo">
+            <source src="./Assets/carsInTheNight.mp4" type="video/mp4">
+            Background-video.
+        </video>
+        <div class="video-overlay">
+            <div>
+                <h1>Welcome to <br>VelocityX</h1>
+                <hr>
+            </div>
+            <div class="playChk-btns">
+                <button class="play-music-btn" id="playMusicBtn" onclick="toggleMusic()">Play Music</button><br><br>
+                <audio id="myAudio" src="./Assets/breakdown-ncs.mp3" loop preload="auto"></audio>
+                <button class="check-cars-btn" onclick="scrollToSection()">Discover </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ``````````````````````````````````````````````````` -->
+
+    <div class="car-list-heading">
+        <h1>Stunning Cars</h1>
+        <hr>
+    </div>
+
+    <!-- ```````````````````````````````````````````` -->
+
+    <section id="car-list-cards">
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car01.jpg" alt="Background image">
+            <div class="card-content">
+                <h2> McLaren 720S </h2><br>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car02.jpg" alt="Background image">
+            <div class="card-content">
+                <h2> Lamborghini Huracán </h2><br>
+                <p><i>
+                        The Huracán can accelerate from 0 to 60 mph in 2.9
+                        seconds and has a top speed of 202 mph.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car03.webp" alt="Background image">
+            <div class="card-content">
+                <h2> Lamborghini Aventador </h2><br>
+                <p><i>
+                        The Lamborghini Aventador is a legendary supercar that combines stunning design
+                        with incredible performance.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car02.jpg" alt="Background image">
+            <div class="card-content">
+                <h2> Lamborghini Huracán </h2><br>
+                <p><i>
+                        The Huracán can accelerate from 0 to 60 mph in 2.9
+                        seconds and has a top speed of 202 mph.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car03.webp" alt="Background image">
+            <div class="card-content">
+                <h2> Lamborghini Aventador </h2><br>
+                <p><i>
+                        The Lamborghini Aventador is a legendary supercar that combines stunning design
+                        with incredible performance.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div class="card">
+            <img class="carList" src="./Assets/car01.jpg" alt="Background image">
+            <div class="card-content">
+                <h2> McLaren 720S </h2><br>
+                <p><i>
+                        The McLaren 720S is a supercar that combines stunning looks, blistering
+                        performance, and cutting-edge technology.
+                    </i></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+    </section>
+
+    <!-- ```````````````````````````````````````````` -->
+    <script src=""></script>
+    <script src="https://kit.fontawesome.com/6ca9790e31.js" crossorigin="anonymous"></script>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

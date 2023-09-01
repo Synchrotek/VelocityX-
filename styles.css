@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 1.5rem 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #d49125;
+    padding: 0 2rem;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 1.6em;
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #d49125;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    margin-right: 1.5rem;
+    padding-bottom: 0.2rem;
+    z-index: 5;
+    color: #fff;
+}
+
+/* Video section styles */
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#myVideo {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.video-overlay {
+    /* position: static; */
+    height: inherit;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: first baseline;
+}
+
+.video-overlay h1 {
+    font-family: sans-serif;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); */
+    background: linear-gradient(to bottom right, #F8DE22, #74f8c6, #d3bc1b);
+    font-size: 5rem;
+    text-align: start;
+    /* color: #d3bc1b; */
+    margin-bottom: 1rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr {
+    height: 4px;
+    background-color: #d3bc1b;
+    width: 100%;
+    border: none;
+}
+
+.check-cars-btn,
+.play-music-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    color: #fff397;
+    padding: 0.5rem 1rem;
+    /* border: 3px solid none; */
+    border-radius: 10px;
+    cursor: pointer;
+    /* transition: background-color 0.3s, color 0.3s, transform 0.3s; */
+    transition: 0.3s;
+}
+
+.check-cars-btn:hover,
+.play-music-btn:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(1.15);
+    border-color: transparent;
+}
+
+.check-cars-btn::after {
+    content: " Stunning Cars";
+    color: transparent;
+    opacity: 0;
+    font-size: 2rem;
+    transition: opacity 0.3s;
+}
+
+.check-cars-btn:hover::after {
+    color: #fff;
+    opacity: 1;
+}
+
+.random-text {
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+/* ---------------------------------------------------------- */
+
+.car-list-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.car-list-heading h1 {
+    font-size: 3rem;
+    color: #d3bc1b;
+    margin: 5rem 0 2rem 0;
+}
+
+.car-list-heading hr {
+    width: 90%;
+}
+
+
+#car-list-cards {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.card {
+    width: calc(31% - 1px);
+    height: 40%;
+    position: relative;
+    margin-bottom: 1.5rem;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.carList {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.card-content {
+    position: absolute;
+    inset: 0 0 0 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+    font-size: 100%;
+}
+
+.card:hover .carList {
+    opacity: 0.6;
+}
+
+.card:hover .card-content {
+    color: white;
+    opacity: 1;
+}
