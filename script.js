@@ -3,8 +3,6 @@ const navLinks = document.querySelector(".nav-links");
 const myVideo = document.getElementById("myVideo");
 let clicked = false;
 
-
-
 const playMusicBtn = document.getElementById('playMusicBtn');
 const myAudio = document.getElementById('myAudio');
 
@@ -20,9 +18,6 @@ function toggleMusic() {
         playMusicBtn.innerHTML = 'Play Music';
     }
 }
-
-
-
 
 menuHamburger.addEventListener('click', () => {
     navLinks.classList.toggle('hamburger-toggle')
