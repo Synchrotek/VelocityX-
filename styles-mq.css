@@ -37,6 +37,10 @@
         z-index: 3;
     }
 
+    .navbar {
+        position: relative;
+    }
+
     /* .menu-hamburger.hamburger-toggle {
         opacity: 0;
     } */
@@ -51,6 +55,10 @@
     .navbar .nav-links ul li {
         font-size: 2rem;
         margin-top: 1.7rem;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 
     /* ---------------------------------------------- */
@@ -111,13 +119,19 @@
         justify-content: center;
     }
 
-    /* .check-cars-btn:hover,
-    .play-music-btn:hover {
-        transform: scale(1);
-    } */
-
     .check-cars-btn::after {
         content: "";
+    }
+
+    #about h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0 0 0;
+    }
+
+    .usAbout {
+        padding: 1rem 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -146,7 +160,6 @@
     .video-overlay h1 {
         font-family: sans-serif;
         font-size: 4rem;
-        /* text-align: center; */
         color: #d3bc1b;
         margin-bottom: 1rem;
     }
