@@ -3,6 +3,8 @@ const navLinks = document.querySelector(".nav-links");
 const myVideo = document.getElementById("myVideo");
 let clicked = false;
 
+
+
 const playMusicBtn = document.getElementById('playMusicBtn');
 const myAudio = document.getElementById('myAudio');
 
@@ -19,6 +21,7 @@ function toggleMusic() {
     }
 }
 
+
 menuHamburger.addEventListener('click', () => {
     navLinks.classList.toggle('hamburger-toggle')
     myVideo.classList.toggle('hamburger-toggle')
@@ -34,7 +37,10 @@ menuHamburger.addEventListener('click', () => {
     }
 })
 
-const scrollToSection = () => {
-    const section = document.getElementById('car-list-cards');
-    section.scrollIntoView({ behavior: 'smooth' });
+const scrlToSection = (sectionId, upGap) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        let offset = section.getBoundingClientRect().top - upGap;
+        window.scrollBy({ top: offset, behavior: 'smooth' });
+    }
 }
