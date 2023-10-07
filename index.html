@@ -20,10 +20,10 @@
         <h2 class="logo">VelocityX</h2>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a onclick="scrollToSection()" href="#">Cars</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a onclick="scrlToSection('video-section', 0)" href="#">Home</a></li>
+                <li><a onclick="scrlToSection('car-list-cards', 100)" href="#">Cars</a></li>
+                <li><a onclick="scrlToSection('about', 0)" href="#">About</a></li>
+                <li><a onclick="scrlToSection('footer', 0)" href="#">Credit</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars fa-lg menu-hamburger"></i>
@@ -31,7 +31,7 @@
 
     <!-- ```````````````````````````````````````````` -->
 
-    <section class="video-section">
+    <section id="video-section">
         <video autoplay muted loop id="myVideo">
             <source src="./Assets/carsInTheNight.mp4" type="video/mp4">
             Background-video.
@@ -44,7 +44,7 @@
             <div class="playChk-btns">
                 <button class="play-music-btn" id="playMusicBtn" onclick="toggleMusic()">Play Music</button><br><br>
                 <audio id="myAudio" src="./Assets/breakdown-ncs.mp3" loop preload="auto"></audio>
-                <button class="check-cars-btn" onclick="scrollToSection()">Discover </button>
+                <button class="check-cars-btn" onclick="scrlToSection('car-list-cards', 200)">Discover </button>
             </div>
         </div>
     </section>
@@ -127,6 +127,26 @@
         </div>
         <!-- ------------------------------------------------------ -->
     </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <hr>
+        <ul class="usAbout">
+            <li>We are passionate about delivering the most exhilarating experience
+                to our users </li>
+            <li>By providing comprehensive and thrilling details about
+                the world's most exotic and high-performance supercars.</li>
+            <li>Join us as we take you on an adrenaline-fueled journey through the realm of supercars ,</li>
+            <li>where every curve, engine roar, and cutting-edge technology is celebrated.</li>
+        </ul>
+    </section>
+
+    <footer id="footer">
+        Made with "&nbsp;
+        <i class="fa-solid fa-heart fa-bounce" style="color: #cf4f62;"></i>
+        " &nbsp;by&nbsp;&nbsp;
+        <a href="https://github.com/Synchrotek" target="_blank">Synchrotek</a>
+    </footer>
 
     <!-- ```````````````````````````````````````````` -->
     <script src=""></script>
